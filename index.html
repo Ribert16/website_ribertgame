@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Snake Klasik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Game Snake</h1>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Snake Klasik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Game Snake</h1>
+      <div id="playerList" class="player-list">
+        <h2>Daftar Pemain</h2>
+        <div class="player-input">
+          <input type="text" id="playerNameInput" placeholder="Masukkan nama Anda" maxlength="20">
+          <button id="addPlayer">Tambah Pemain</button>
+        </div>
+        <div id="playersList" class="players"></div>
+        <button id="startGameButton" class="start-game-btn">Mulai Game</button>
+      </div>
+      <div id="gameArea" class="game-area" style="display: none;">
+        <div class="game-info">
+          <div class="score">Skor: <span id="score">0</span></div>
+          <div class="high-score">Skor Tertinggi: <span id="highScore">0</span></div>
+          <div class="level">Level: <span id="level">1</span></div>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+          <button id="startButton">Mulai Game</button>
+          <button id="pauseButton">Pause</button>
+        </div>
+        <div class="instructions">
+          <p>Gunakan tombol panah untuk mengontrol ular</p>
+          <p>Tekan SPACE untuk pause/resume</p>
+        </div>
+      </div>
+    </div>
+    <audio id="eatSound" src="https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3"></audio>
+    <audio id="gameOverSound" src="https://assets.mixkit.co/active_storage/sfx/2014/2014-preview.mp3"></audio>
+    <script>
+      // Variabel global untuk menyimpan data pemain
+      let players = [];
+    </script>
+    <script src="input.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
